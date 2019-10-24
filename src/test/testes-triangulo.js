@@ -40,3 +40,14 @@ describe('Verificando se os tamanhos lados são válidos', () => {
     assert.equal(triangulo.valido(), false);
   });
 });
+
+describe('Verificando se é um triangulo retangulo', () => {
+  it('Teste: triangulo retangulo ', () => {
+    let triangulo = new Triangulo(5, 4, 3)
+    assert.equal(triangulo.isRetangulo(), true);
+  });
+  it('Teste: triangulo que não é retangulo ', () => {
+    let triangulo = new Triangulo(5, 5, 3)
+    assert.equal(triangulo.isRetangulo(), false);
+  });
+});
